@@ -1,37 +1,172 @@
 <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адвокат Немченко Анастасия</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #1E1E1E;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        nav a.active {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        section h2 {
+            color: #1E1E1E;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-between;
+        }
+        .service {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            flex: 1 1 calc(33.333% - 1rem);
+            padding: 1rem;
+            text-align: center;
+        }
+        .service h3 {
+            color: #333;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        .contact {
+            background-color: #f4f4f4;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .contact p {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+        footer {
+            background-color: #1E1E1E;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>АДВОКАТ</h1>
+        <p>НЕМЧЕНКО АНАСТАСИЯ АЛЕКСЕЕВНА</p>
+        <p>"Моя работа - защита Ваших прав и интересов на профессиональной основе"</p>
+    </header>
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>NGINX on Railway</title>
-    <meta name="description" content="Choo Choo!" />
+    <nav>
+        <a href="#about" class="tab-link">Обо мне</a>
+        <a href="#services" class="tab-link">Услуги</a>
+        <a href="#personal-data" class="tab-link">Персональные данные</a>
+        <a href="#contacts" class="tab-link">Контакты</a>
+    </nav>
 
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <div class="container">
+        <section id="about">
+            <h2>Обо мне</h2>
+            <p>Член Минской городской коллегии адвокатов. Лицензия №02240/3288 выдана Министерством юстиции Республики Беларусь.</p>
+            <p>Оказываю юридическую помощь в различных отраслях права как жителям города Минска, так и других городов Беларуси.</p>
+        </section>
 
-    <link rel="stylesheet" href="/styles.css?v=1.0" />
-  </head>
+        <section id="services">
+            <h2>Услуги</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Уголовные дела</h3>
+                </div>
+                <div class="service">
+                    <h3>Споры по гражданским делам</h3>
+                </div>
+                <div class="service">
+                    <h3>Наследственные споры</h3>
+                </div>
+                <div class="service">
+                    <h3>Административные дела</h3>
+                </div>
+                <div class="service">
+                    <h3>Семейные споры</h3>
+                </div>
+                <div class="service">
+                    <h3>Применение законодательства о персональных данных</h3>
+                </div>
+            </div>
+        </section>
 
-  <body>
-    <main>
-      <img
-        src="https://railway.app/brand/logo-light.svg"
-        alt="Railway logo"
-        class="logo"
-      />
+        <section id="personal-data">
+            <h2>Персональные данные</h2>
+            <p>В данном разделе предоставляется информация о правилах обработки персональных данных, которые применяются в рамках оказания юридических услуг.</p>
+            <p>Мы гарантируем конфиденциальность и соблюдение законодательства при работе с личной информацией клиентов.</p>
+        </section>
 
-      <h1>NGINX on Railway</h1>
+        <section id="contacts" class="contact">
+            <h2>Контакты</h2>
+            <p><strong>Телефон:</strong> +375 29 114 54 88</p>
+            <p><strong>Адрес:</strong> г. Минск, ул. В.Хоружей, 15</p>
+            <p><strong>Время работы:</strong> 24/7</p>
+        </section>
+    </div>
 
-      <p>
-        Choo Choo! This is an example of an NGINX static site running on
-        Railway.
-        <a
-          href="https://github.com/railwayapp/starters/tree/master/examples/nginx"
-          >View source</a
-        >.
-      </p>
-    </main>
+    <footer>
+        <p>&copy; 2024 Адвокат Немченко Анастасия Алексеевна</p>
+    </footer>
 
-    <script src="/script.js"></script>
-  </body>
+    <script>
+        const links = document.querySelectorAll('.tab-link');
+        
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                links.forEach(link => link.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+    </script>
+</body>
 </html>
